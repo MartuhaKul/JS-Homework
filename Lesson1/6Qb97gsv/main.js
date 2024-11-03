@@ -1,6 +1,6 @@
-let firstName = 'Іван';
-let middleName = 'Іванович';
-let lastName = 'Іванов';
+let firstName = 'Марта';
+let middleName = 'Романівна';
+let lastName = 'Кулешір';
 
 let person = firstName + ' ' + middleName + ' ' + lastName;
 console.log(person);
