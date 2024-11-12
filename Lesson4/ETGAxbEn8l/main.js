@@ -1,4 +1,4 @@
-function radiusCircle(radius) {
+function areaCircle(radius) {
     return Math.PI * radius * radius;
 }
-console.log(radiusCircle(6))
+console.log(areaCircle(6))
