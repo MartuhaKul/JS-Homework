@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let suits = ['spade', 'diamond', 'heart', 'club'];
+    let values = ['6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace'];
+
+    let cards = [];
+    for (const suit of suits) {
+        for (const value of values) {
+            let card = {cardSuit: suit, value: value}
+            if (suit === 'heart' || suit === 'diamond') {
+                card.color = 'red';
+            } else {
+                card.color = 'black';
+            }
+            cards.push(card)
+        }
+    }
+    console.log(cards)
+    let reduce = cards.reduce((accum, card) => {
+        if (card.cardSuit === 'spade') {
+            accum.spades.push(card)
+        } else if (card.cardSuit === 'diamond') {
+            accum.diamonds.push(card)
+        } else if (card.cardSuit === 'club') {
+            accum.clubs.push(card)
+        } else {
+            accum.hearts.push(card)
+        }
+        return accum;
+
+    }, {
+        spades: [],
+        diamonds: [],
+        hearts: [],
+        clubs: []
+    });
+    console.log(reduce)
+</script>
+</body>
+</html>
