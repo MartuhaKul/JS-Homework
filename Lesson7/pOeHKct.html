@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function User(id, name, surname , email, phone) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    let usersArr = [
+        new User(1, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(2, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(3, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(4, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(5, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(6, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(7, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(8, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(9, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980'),
+        new User(10, 'Marta', 'Kuleshir', 'martysichkaaaa15@gmail.com', '+0980980980')
+    ];
+
+    sortArrGrow = usersArr.sort((a, b)=> a.id - b.id);
+    console.log(sortArrGrow);
+
+</script>
+</body>
+</html>

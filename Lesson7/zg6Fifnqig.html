@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    class Cinderella {
+
+        constructor(name, age, footSize) {
+            this.name = name;
+            this.age = age;
+            this.footSize = footSize;
+        }
+    }
+
+    class Prince {
+
+        constructor(name, age, footFound) {
+            this.name = name;
+            this.age = age;
+            this.footFound = footFound;
+        }
+    }
+
+    let princesses = [
+        new Cinderella('Попелюшка', 18, 34),
+        new Cinderella('Попелюшка', 18, 35),
+        new Cinderella('Попелюшка', 18, 36),
+        new Cinderella('Попелюшка', 18, 36),
+        new Cinderella('Попелюшка', 18, 37),
+        new Cinderella('Попелюшка', 18, 38),
+        new Cinderella('Попелюшка', 18, 39),
+        new Cinderella('Попелюшка', 18, 39),
+        new Cinderella('Попелюшка', 18, 33),
+        new Cinderella('Попелюшка', 18, 37),
+    ];
+    let prince = new Prince('Чарльз', 23, 35);
+
+    cinderellaFind = princesses.find(princess => princess.footSize === prince.footFound)
+    console.log(cinderellaFind);
+
+</script>
+</body>
+</html>
